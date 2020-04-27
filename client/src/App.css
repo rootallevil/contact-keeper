@@ -1,0 +1,395 @@
+.App {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.App h1 {
+  color: #ff3a54;
+  font-size: 40px;
+  margin: 0;
+  margin-top: 8vh;
+}
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* Transition Group */
+
+.item-enter {
+  opacity: 0;
+}
+
+.item-enter-active {
+  opacity: 1;
+  transition: opacity 200ms ease-in;
+}
+
+.item-exit {
+  opacity: 1;
+  transition: opacity 200ms ease-in;
+}
+
+.item-exit-active {
+  opacity: 0;
+}
+
+/* Header */
+
+.Header {
+  display: flex;
+  height: 10vh;
+  background: #0059ff;
+}
+
+.Header h2 {
+  color: #fff;
+  font-size: 25px;
+  margin: auto 0;
+  margin-left: 2vw;
+  font-weight: 100;
+}
+
+.Header ul {
+  margin: auto 0;
+  display: flex;
+  margin-left: 3vw;
+  padding-inline-start: 0;
+}
+
+.Header ul li {
+  list-style: none;
+  font-size: 18px;
+  margin: auto 0;
+  color: #fff;
+  margin-right: 2vw;
+}
+
+.Header ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.logoutLink {
+  margin-left: auto;
+}
+
+/* Home */
+
+.container h1 {
+  color: #0059ff;
+  margin: 0;
+  margin-top: 4vh;
+  margin-left: 4vw;
+}
+
+.homeContainer {
+  display: flex;
+}
+
+/* About */
+
+.about {
+  height: auto;
+  padding-left: 4vw;
+}
+
+.about h1 {
+  color: #0059ff;
+  margin: 0;
+  margin-top: 6vh;
+  margin-bottom: 3vh;
+  font-size: 32px;
+}
+
+.about p {
+  font-size: 18px;
+  color: #444;
+  margin: 0;
+  margin-top: 2vh;
+}
+
+/* Contact Form */
+
+.personalDetails {
+  width: 60%;
+}
+
+.personalDetails form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: auto;
+  margin-top: 8vh;
+  padding-left: 10vw;
+}
+
+.personalDetails form h2 {
+  margin: 0;
+  text-align: center;
+  color: #0059ff;
+  font-size: 32px;
+  margin-bottom: 4vh;
+}
+
+.personalDetails input {
+  height: 4vh;
+  padding: 3px 8px;
+  font-size: 14px;
+  margin-bottom: 2vh;
+}
+
+.personalDetails p {
+  margin: 0;
+  color: #444;
+  margin-top: 2vh;
+}
+
+.radioBtns {
+  display: flex;
+  margin: 1vh 0;
+}
+
+.radioBtns span {
+  margin: auto 0;
+  color: #222;
+  margin-left: 6px;
+  margin-right: 2vw;
+}
+
+.radioBtns input {
+  margin: auto 0;
+}
+
+.personalDetails input[type="submit"] {
+  height: 50px;
+  margin-top: 3vh;
+  font-size: 16px;
+  background: #0059ff;
+  border: none;
+  box-shadow: 2px 2px 4px #aaa;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.clearBtn {
+  display: flex;
+  margin-top: 1vh;
+}
+
+.clearBtn button {
+  height: 50px;
+  width: 120px;
+  margin: auto;
+  font-size: 16px;
+  background: #ddd;
+  border: none;
+  color: #333;
+  border-radius: 3px;
+}
+
+@media (max-width: 860px) {
+  .Header {
+    height: 7vh;
+  }
+
+  .homeContainer {
+    flex-direction: column;
+  }
+
+  .personalDetails {
+    width: 100%;
+  }
+
+  .personalDetails form {
+    width: 80%;
+    margin-top: 5vh;
+    padding: 0;
+  }
+
+  .personalDetails input[type="submit"] {
+    margin-top: 2vh;
+  }
+}
+
+/* Contacts */
+
+.contacts {
+  width: 40%;
+  margin: 8vh 0;
+}
+
+.contacts h4 {
+  margin: 0;
+}
+
+.filterInput {
+  display: flex;
+  width: 80%;
+}
+
+.filterInput input {
+  margin-bottom: 4vh;
+  height: 4vh;
+  flex: 1;
+  padding: 3px 8px;
+}
+
+.contactCards {
+  margin: auto 0;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactCard {
+  background: #eee;
+  margin-bottom: 3vh;
+  border-radius: 5px;
+  padding: 4vh 2vw;
+  box-shadow: 3px 4px 5px #aaa;
+}
+
+.contactCard h2 {
+  color: #444;
+  margin: 0;
+  width: 100%;
+  margin-bottom: 2.5vh;
+}
+
+.contactCard p {
+  margin: 0;
+  margin-top: 2vh;
+  color: #555;
+}
+
+.contactCard i {
+  margin-right: 6px;
+  color: #0059ff;
+}
+
+.contactCard span {
+  width: auto;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 100;
+  float: right;
+}
+
+.greenBadge {
+  background: #00c070;
+}
+
+.blueBadge {
+  background: #0059ff;
+}
+
+.cardBtns {
+  display: flex;
+  margin-top: 4vh;
+}
+
+.cardBtns button {
+  height: 36px;
+  flex: 1;
+  border-radius: 3px;
+  margin: auto 6px;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  background: #444;
+}
+
+@media (max-width: 860px) {
+  .contacts {
+    width: 100%;
+    margin-top: 5vh;
+  }
+
+  .filterInput {
+    margin: auto;
+    width: 90%;
+  }
+
+  .filterInput input {
+    margin-bottom: 2vh;
+  }
+
+  .contactCards {
+    margin: auto;
+    width: 90%;
+  }
+
+  .contactCard {
+    padding: 3vh 6vw;
+  }
+}
+
+/* Register & Login */
+
+.regForm {
+  width: 100%;
+}
+
+.regForm h1 {
+  text-align: center;
+  margin-left: 0;
+  margin-top: 8vh;
+}
+
+.regForm form {
+  padding-left: 0;
+  width: 40%;
+  margin-top: 5vh;
+}
+
+.loginForm form {
+  width: 30%;
+}
+
+@media (max-width: 860px) {
+  .loginForm form {
+    width: 80%;
+  }
+
+  .regForm form {
+    width: 80%;
+  }
+}
+
+/* Alert */
+
+.danger {
+  background: #ff2244;
+  height: 8vh;
+  margin: 10px;
+  display: flex;
+  color: #fff;
+}
+
+.danger p {
+  margin: auto 0;
+  margin-left: 2vw;
+}
+
+.danger p i {
+  margin-right: 0.8vw;
+}
+
+/* Footer */
+
+.footer {
+  height: 10vh;
+  background: #ddd;
+  display: flex;
+}
+
+.footer p {
+  margin: auto;
+  font-size: 16px;
+}
