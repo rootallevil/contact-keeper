@@ -2,3 +2,5 @@
   "mongoURI": "",
   "jwtSecret": "secret"
 }
+
+// paste mongo DB URI and create a file production.json with the same content
